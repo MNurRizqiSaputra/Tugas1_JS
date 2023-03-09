@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS P.Panjang</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="index.html">Beranda</a>
+      <a href="#">Rumus Persegi Panjang</a>
+      <a href="Segitiga_JS.html">Rumus Segitiga</a>
+      <a href="JajarGenjang_JS.html">Rumus JajarGenjang</a>
+    </div>
+  </body>
+</html>
+
+<script>
+  //Intro page
+  document.write("<h1 align='center'>MENGHITUNG RUMUS PERSEGI PANJANG</h1>");
+  document.write("<hr color='white'>");
+
+  //Bagian Pemanggilan Rumus dengan memanggil Variabel
+  document.write("<h2>RUMUS</h2>");
+  var RumusKeliling = "2 * (Panjang + Lebar)";
+  var RumusLuas = "Panjang * Lebar";
+  document.write(
+    "Rumus Keliling = " + RumusKeliling,
+    "<br />",
+    "Rumus Luas = " + RumusLuas
+  );
+  document.write("<hr color='white'>");
+  console.log("Rumus Keliling = " + RumusKeliling);
+  console.log("Rumus Luas = " + RumusLuas);
+
+  //Bagian Soal
+  document.write("<h2>SOAL</h2>");
+  document.write(
+    "<h3>1. Sebuah persegi panjang memiliki panjang 10 cm dan lebar 6 cm, Hitunglah luas dan keliling persegi panjang tersebut </h3>"
+  );
+  document.write("<hr color='white'>");
+
+  //Bagian Memasukan Data Soal ke dalam Rumus
+  document.write("<h2>Masukan soal ke dalam rumus</h2>");
+  var Panjang = 10;
+  var Lebar = 6;
+  document.write(
+    "Keliling = 2 * (",
+    Panjang,
+    "+",
+    Lebar,
+    ")",
+
+    "<br />",
+
+    "Luas = ",
+    Panjang,
+    "*",
+    Lebar
+  );
+  document.write("<hr color='white'>");
+  console.log("panjang = " + Panjang);
+  console.log("lebar = " + Lebar);
+  console.log("Keliling = 2 * (", Panjang, "+", Lebar, ")");
+  console.log("Luas = ", Panjang, "*", Lebar);
+
+  //Bagian Perhitungan Rumus
+  document.write("<h2 align='center'>HASIL</h2>");
+  let HitungKeliling = 2 * (Panjang + Lebar);
+  let HitungLuas = Panjang * Lebar;
+  document.write(
+    "<center>Jadi Hasil Keliling Persegi Panjang adalah ",
+    HitungKeliling,
+    " cm",
+    "</center>",
+    "<br />",
+    "<center>Jadi Hasil Luas Persegi Panjang adalah ",
+    HitungLuas,
+    " cm²",
+    "</center>"
+  );
+  document.write("<hr color='white'>");
+  console.log("Hasil Keliling = " + HitungKeliling);
+  console.log("Hasil Luas = " + HitungLuas);
+</script>

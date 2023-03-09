@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS SEGITIGA</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">Beranda</a>
+            <a href="PersegiPanjang_JS.html">Rumus Persegi Panjang</a>
+            <a href="#">Rumus Segitiga</a>
+            <a href="JajarGenjang_JS.html">Rumus JajarGenjang</a>
+        </div>
+    </body>
+</html>
+
+<script>
+    //Intro page
+    document.write("<h1 align='center'>MENGHITUNG RUMUS SEGITIGA</h1>");
+    document.write("<hr color='white'>");
+
+    //Bagian Pemanggilan Rumus dengan memanggil Variabel
+    document.write("<h2>RUMUS</h2>");
+    var RumusKeliling = "Sisi + Sisi + Sisi";
+    var RumusLuas = "0.5 * Alas * Tinggi";
+    document.write(
+        "Rumus Keliling = " + RumusKeliling,
+        "<br />",
+        "Rumus Luas = " + RumusLuas
+    );
+    document.write("<hr color='white'>");
+    console.log("Rumus Keliling = " + RumusKeliling);
+    console.log("Rumus Luas = " + RumusLuas);
+
+    //Bagian Soal
+    document.write("<h2>SOAL</h2>");
+    document.write(
+        "<h3>1. Diketahui segitiga memiliki panjang sisi a = 8 cm, sisi b = 10 cm, dan sisi c = 12 cm. Hitunglah keliling segitiga tersebut!</h3>", 
+        "<h3>2. Sebuah segitiga memiliki alas sepanjang 15 cm dan tinggi sepanjang 12 cm. Berapakah luas segitiga tersebut?</h3>"
+    );
+    document.write("<hr color='white'>");
+
+    //Bagian Memasukan Data Soal ke dalam Rumus
+    document.write("<h2>Masukan soal ke dalam rumus</h2>");
+    var SisiA = 8;
+    var SisiB = 10;
+    var SisiC = 12;
+    var Alas = 15;
+    var Tinggi = 12;
+    document.write(
+        "Keliling = " , SisiA, "+", SisiB, "+", SisiC,
+
+        "<br />",
+
+        "Luas = ", 0.5, "*", Alas, "*", Tinggi
+    );
+    document.write("<hr color='white'>");
+    console.log("Sisi A = " + SisiA);
+    console.log("Sisi B = " + SisiB);
+    console.log("Sisi C = " + SisiC);
+    console.log("Alas = " + Alas);
+    console.log("Tinggi = " + Tinggi);
+    console.log("Keliling = " , SisiA, "+", SisiB, "+", SisiC );
+    console.log("Luas = ", 0.5, "*", Alas, "*", Tinggi);
+
+    //Bagian Perhitungan Rumus
+    document.write("<h2 align='center'>HASIL</h2>");
+    let HitungKeliling = SisiA + SisiB + SisiC;
+    let HitungLuas = 0.5 * Alas* Tinggi;
+    document.write(
+        "<center>Jadi Hasil Keliling Segitiga adalah ",
+        HitungKeliling,
+        " cm",
+        "</center>",
+        "<br />",
+        "<center>Jadi Hasil Luas Segitiga adalah ",
+        HitungLuas,
+        " cm²",
+        "</center>"
+    );
+    document.write("<hr color='white'>");
+    console.log("Hasil Keliling = " + HitungKeliling);
+    console.log("Hasil Luas = " + HitungLuas);
+</script>

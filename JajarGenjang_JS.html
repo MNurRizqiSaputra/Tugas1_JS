@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS JAJARGENJANG</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">Beranda</a>
+            <a href="PersegiPanjang_JS.html">Rumus Persegi Panjang</a>
+            <a href="Segitiga_JS.html">Rumus Segitiga</a>
+            <a href="#">Rumus JajarGenjang</a>
+        </div>
+    </body>
+</html>
+
+<script>
+     //Intro page
+    document.write("<h1 align='center'>MENGHITUNG RUMUS JAJARGENJANG</h1>");
+    document.write("<hr color='white'>");
+
+    //Bagian Pemanggilan Rumus dengan memanggil Variabel
+    document.write("<h2>RUMUS</h2>");
+    var RumusKeliling = "2 * (Sisi Sejajar 1 + Sisi Sejajar 2)";
+    var RumusLuas = "Alas * Tinggi";
+    document.write(
+        "Rumus Keliling = " + RumusKeliling,
+        "<br />",
+        "Rumus Luas = " + RumusLuas
+    );
+    document.write("<hr color='white'>");
+    console.log("Rumus Keliling = " + RumusKeliling);
+    console.log("Rumus Luas = " + RumusLuas);
+
+    //Bagian Soal
+    document.write("<h2>SOAL</h2>");
+    document.write(
+        "<h3>Sebuah jajargenjang memiliki panjang sisi sejajar sebesar 10 cm dan 6 cm, serta memiliki tinggi sebesar 8 cm. Hitunglah keliling dan luas jajargenjang tersebut!</h3>"
+    );
+    document.write("<hr color='white'>");
+
+    //Bagian Memasukan Data Soal ke dalam Rumus
+    document.write("<h2>Masukan soal ke dalam rumus</h2>");
+    var SisiSejajar1 = 20;
+    var SisiSejajar2 = 12;
+    var Tinggi = 8;
+    document.write(
+        "Keliling = 2 * (", SisiSejajar1, "+", SisiSejajar2,")",
+
+        "<br />",
+
+        "Luas = ",  SisiSejajar2, "*", Tinggi,
+
+        "<br />",
+        "Tips.. mencari ukuran alas dapat dilihat dari sisi sejajar yang pendek dengan tinggi jajargenjang. "
+    );
+    document.write("<hr color='white'>");
+    console.log("Sisi Sejajar 1 = " + SisiSejajar1);
+    console.log("Sisi Sejajar 2 = " + SisiSejajar2);
+    console.log("Keliling = 2 * (", SisiSejajar1, "+", SisiSejajar2,")");
+    console.log("Luas = ",  SisiSejajar2, "*", Tinggi);
+
+    //Bagian Perhitungan Rumus
+    document.write("<h2 align='center'>HASIL</h2>");
+    let HitungKeliling = 2 * (SisiSejajar1 + SisiSejajar2);
+    let HitungLuas = SisiSejajar2* Tinggi;
+    document.write(
+        "<center>Jadi Hasil Keliling JajarGenjang adalah ",
+        HitungKeliling,
+        " cm",
+        "</center>",
+        "<br />",
+        "<center>Jadi Hasil Luas JajarGenjang adalah ",
+        HitungLuas,
+        " cm²",
+        "</center>"
+    );
+    document.write("<hr color='white'>");
+    console.log("Hasil Keliling = " + HitungKeliling);
+    console.log("Hasil Luas = " + HitungLuas);
+</script>

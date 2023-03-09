@@ -1,0 +1,11 @@
+    Persegi panjang:
+        Keliling = 2 x (panjang + lebar)
+        Luas = panjang x lebar
+
+    Segitiga:
+        Keliling = sisi a + sisi b + sisi c
+        Luas = 0.5 x alas x tinggi
+
+    Jajargenjang:
+        Keliling = 2 x (sisi sejajar 1 + sisi sejajar 2)
+        Luas = alas x tinggi
